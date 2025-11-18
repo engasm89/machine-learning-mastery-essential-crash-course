@@ -1,20 +1,16 @@
-# ML Crash — Circuit Schematic
+# Machine Learning Mastery Essential Crash Course — Circuit Notes
 
-- Course: Machine Learning Mastery: Essential Crash Course
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/machine-learning-crash-course-s/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Embedded Systems board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- Sensor to MCU for feature input; output via LED/LCD.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- Sensor -> MCU -> Model -> LED/LCD
-```
-
-## Purchase With Discount
-
-Get a discounted price and deploy simple models — use the link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
